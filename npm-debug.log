@@ -1,0 +1,71 @@
+0 info it worked if it ends with ok
+1 verbose cli [ 'C:\\Program Files\\nodejs\\node.exe',
+1 verbose cli   'C:\\Program Files\\nodejs\\node_modules\\npm\\bin\\npm-cli.js',
+1 verbose cli   'install',
+1 verbose cli   '-g',
+1 verbose cli   'express' ]
+2 info using npm@3.10.9
+3 info using node@v6.9.2
+4 silly loadCurrentTree Starting
+5 silly install loadCurrentTree
+6 silly install readGlobalPackageData
+7 silly fetchPackageMetaData express
+8 silly fetchNamedPackageData express
+9 silly mapToRegistry name express
+10 silly mapToRegistry using default registry
+11 silly mapToRegistry registry https://registry.npmjs.org/
+12 silly mapToRegistry data Result {
+12 silly mapToRegistry   raw: 'express',
+12 silly mapToRegistry   scope: null,
+12 silly mapToRegistry   escapedName: 'express',
+12 silly mapToRegistry   name: 'express',
+12 silly mapToRegistry   rawSpec: '',
+12 silly mapToRegistry   spec: 'latest',
+12 silly mapToRegistry   type: 'tag' }
+13 silly mapToRegistry uri https://registry.npmjs.org/express
+14 verbose request uri https://registry.npmjs.org/express
+15 verbose request no auth needed
+16 info attempt registry request try #1 at 12:42:01
+17 verbose request id 4987a96a63d7be6e
+18 http request GET https://registry.npmjs.org/express
+19 info retry will retry, error on last attempt: Error: getaddrinfo ENOENT registry.npmjs.org:443
+20 info attempt registry request try #2 at 12:42:11
+21 http request GET https://registry.npmjs.org/express
+22 info retry will retry, error on last attempt: Error: getaddrinfo ENOENT registry.npmjs.org:443
+23 info attempt registry request try #3 at 12:43:11
+24 http request GET https://registry.npmjs.org/express
+25 silly fetchPackageMetaData Error: getaddrinfo ENOENT registry.npmjs.org:443
+25 silly fetchPackageMetaData     at Object.exports._errnoException (util.js:1022:11)
+25 silly fetchPackageMetaData     at errnoException (dns.js:33:15)
+25 silly fetchPackageMetaData     at GetAddrInfoReqWrap.onlookup [as oncomplete] (dns.js:76:26)
+25 silly fetchPackageMetaData  error for express { Error: getaddrinfo ENOENT registry.npmjs.org:443
+25 silly fetchPackageMetaData     at Object.exports._errnoException (util.js:1022:11)
+25 silly fetchPackageMetaData     at errnoException (dns.js:33:15)
+25 silly fetchPackageMetaData     at GetAddrInfoReqWrap.onlookup [as oncomplete] (dns.js:76:26)
+25 silly fetchPackageMetaData   code: 'ENOENT',
+25 silly fetchPackageMetaData   errno: 'ENOENT',
+25 silly fetchPackageMetaData   syscall: 'getaddrinfo',
+25 silly fetchPackageMetaData   hostname: 'registry.npmjs.org',
+25 silly fetchPackageMetaData   host: 'registry.npmjs.org',
+25 silly fetchPackageMetaData   port: 443 }
+26 silly rollbackFailedOptional Starting
+27 silly rollbackFailedOptional Finishing
+28 silly runTopLevelLifecycles Finishing
+29 silly install printInstalled
+30 verbose stack Error: getaddrinfo ENOENT registry.npmjs.org:443
+30 verbose stack     at Object.exports._errnoException (util.js:1022:11)
+30 verbose stack     at errnoException (dns.js:33:15)
+30 verbose stack     at GetAddrInfoReqWrap.onlookup [as oncomplete] (dns.js:76:26)
+31 verbose cwd C:\wamp64\www\apps-realtime-node-js
+32 error Windows_NT 10.0.14393
+33 error argv "C:\\Program Files\\nodejs\\node.exe" "C:\\Program Files\\nodejs\\node_modules\\npm\\bin\\npm-cli.js" "install" "-g" "express"
+34 error node v6.9.2
+35 error npm  v3.10.9
+36 error code ENOENT
+37 error errno ENOENT
+38 error syscall getaddrinfo
+39 error enoent getaddrinfo ENOENT registry.npmjs.org:443
+40 error enoent getaddrinfo ENOENT registry.npmjs.org:443
+40 error enoent This is most likely not a problem with npm itself
+40 error enoent and is related to npm not being able to find a file.
+41 verbose exit [ 1, true ]
